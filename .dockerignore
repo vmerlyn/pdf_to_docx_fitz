@@ -1,0 +1,29 @@
+# Ignore virtual environments
+.venv/
+env/
+venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignore editor & IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore runtime uploads and generated files
+uploads/
+*.log
+
+# Ignore macOS and Windows OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore test artifacts (if any)
+tests/
+.coverage
+htmlcov/
+*.pytest_cache/

@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Docker Image",
+      "type": "shell",
+      "command": "docker build -t pdf2docx-fastapi .",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Builds the Docker image for FastAPI app"
+    },
+    {
+      "label": "Run Docker Container",
+      "type": "shell",
+      "command": "docker run --rm -p 8000:8000 pdf2docx-fastapi",
+      "group": "test",
+      "problemMatcher": [],
+      "detail": "Runs the Docker container"
+    }
+  ]
+}
