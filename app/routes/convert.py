@@ -2,6 +2,7 @@ from fastapi import APIRouter, UploadFile, File
 from fastapi.responses import FileResponse
 from app.services.converter import PDFConverter
 from app.config import UPLOAD_DIR
+from app.utils.file_cleanup import delete_expired_files
 
 router = APIRouter()
 
